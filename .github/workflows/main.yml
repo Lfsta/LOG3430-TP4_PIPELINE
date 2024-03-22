@@ -15,3 +15,6 @@ python−v e r s i o n : ” 3. 9 ”
 run : pip i n s t a l l −r r e q ui r em e n t s . t x t
 − name : Run t e s t s
 run : python manage . py t e s t
+name: Run script on failure
+        if: failure()
+        run: python myscript.py
